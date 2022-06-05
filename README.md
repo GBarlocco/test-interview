@@ -9,6 +9,8 @@ Run the application locally
 
 ## Webs
 - [Codewars](https://www.codewars.com)
+- [hackerrank](https://www.hackerrank.com)
+- [Udemy](https://www.udemy.com)
 
 ## Author
 > <p>Gastón Barlocco. </p>
