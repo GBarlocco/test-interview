@@ -14,18 +14,29 @@ server.on(`error`, err => console.log(`error en el servidor ${err}`));
 
 /* udemy:
 Task
-Dado un número entero, invertirlo y devolver el numero entero.
+Dado un número, mostrar una escalera con escalones de "[-]" usando el número para los niveles de la escalera
 
 Examples
+escalera(4)
+[-]
+[-][-]
+[-][-][-]
+[-][-][-][-]
 
 run:
-nodemon Ej8.js
+nodemon udemy10.js
 */
 
-const invertir = (num) => {
-    let numInv = num + ``;
-    numInv = numInv[1] + numInv[0];
-    return Number(numInv);
+const escalera = (num) => {
+    let patron = `[-]`;
+
+    for (let i = 0; i <= num; i++) {
+        let out = ``;
+        for (let j = 0; j < i; j++) {
+            out += patron;
+        }
+        console.log(out);
+    }
 }
 
-console.log(invertir(12));
+(escalera(10));
