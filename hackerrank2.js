@@ -31,7 +31,9 @@ nodemon hackerrank2.js
 */
 
 const miniMaxSum = (arr) => {
-    const base = arr[1] + arr[2] + arr[3];
+    const base1 = arr[0] + arr[1] + arr[2];
+    const base2 = arr[1] + arr[2] + arr[3];
+    const base3 = arr[2] + arr[3] + arr[4];
     const min = (arr[0] + base < base + arr[4] ? arr[0] + base : base + arr[4]);
     const max = (arr[0] + base > base + arr[4] ? arr[0] + base : base + arr[4]);
     console.log(`${min} ${max}`);
